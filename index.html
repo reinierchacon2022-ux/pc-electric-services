@@ -14,13 +14,18 @@
       <img class="brand-logo" src="pc-electric-logo.webp" alt="Logo de P&C Electric Services LLC">
       <span><strong>P&amp;C</strong><small>Electric Services LLC</small></span>
     </a>
-    <button class="menu-button" aria-expanded="false" aria-controls="main-nav">Menú</button>
+    <div class="header-controls">
+      <div class="language-switcher" aria-label="Seleccionar idioma">
+        <button type="button" data-lang="es">ES</button><span>|</span><button type="button" data-lang="en">EN</button>
+      </div>
+      <button class="menu-button" aria-expanded="false" aria-controls="main-nav" data-i18n="menu">Menú</button>
+    </div>
     <nav id="main-nav" aria-label="Navegación principal">
-      <a href="#servicios">Servicios</a>
-      <a href="#trabajos">Trabajos</a>
-      <a href="#proceso">Cómo trabajamos</a>
-      <a href="#cobertura">Cobertura</a>
-      <a class="nav-cta" href="#contacto">Solicitar estimado</a>
+      <a href="#servicios" data-i18n="navServices">Servicios</a>
+      <a href="#trabajos" data-i18n="navWork">Trabajos</a>
+      <a href="#proceso" data-i18n="navProcess">Cómo trabajamos</a>
+      <a href="#cobertura" data-i18n="navCoverage">Cobertura</a>
+      <a class="nav-cta" href="#contacto" data-i18n="navEstimate">Solicitar estimado</a>
     </nav>
   </header>
 
@@ -29,41 +34,37 @@
       <div class="hero-shade"></div>
       <div class="hero-content">
         <p class="eyebrow">Laredo, Texas</p>
-        <h1>Trabajo eléctrico seguro. Resultados que duran.</h1>
-        <p class="hero-copy">Instalaciones residenciales y comerciales, desde obra nueva hasta diagnóstico y actualización de paneles.</p>
+        <h1 data-i18n="heroTitle">Trabajo eléctrico seguro. Resultados que duran.</h1>
+        <p class="hero-copy" data-i18n="heroCopy">Instalaciones residenciales y comerciales, desde obra nueva hasta diagnóstico y actualización de paneles.</p>
         <div class="hero-actions">
-          <a class="button primary" href="tel:+19568982417">Llamar para un estimado</a>
-          <a class="button secondary" href="#servicios">Ver servicios</a>
+          <a class="button primary" href="tel:+19568982417" data-i18n="callEstimate">Llamar para un estimado</a>
+          <a class="button secondary" href="#servicios" data-i18n="viewServices">Ver servicios</a>
         </div>
         <ul class="trust-list" aria-label="Ventajas">
-          <li>Atención directa</li>
-          <li>Trabajo organizado</li>
-          <li>Enfoque en seguridad</li>
+          <li data-i18n="trustDirect">Atención directa</li><li data-i18n="trustOrganized">Trabajo organizado</li><li data-i18n="trustSafety">Enfoque en seguridad</li>
         </ul>
       </div>
     </section>
 
     <section class="services section" id="servicios">
       <div class="section-heading">
-        <p class="eyebrow dark">Servicios eléctricos</p>
-        <h2>Capacidad para proyectos pequeños y grandes</h2>
-        <p>Soluciones claras para constructores, propietarios y negocios.</p>
+        <p class="eyebrow dark" data-i18n="servicesEyebrow">Servicios eléctricos</p>
+        <h2 data-i18n="servicesTitle">Capacidad para proyectos pequeños y grandes</h2>
+        <p data-i18n="servicesCopy">Soluciones claras para constructores, propietarios y negocios.</p>
       </div>
       <div class="service-grid">
-        <article><span>01</span><h3>Obra nueva</h3><p>Instalación eléctrica completa para viviendas, desarrollos y espacios comerciales.</p></article>
-        <article><span>02</span><h3>Rough-in y trim</h3><p>Cableado, cajas, dispositivos y terminaciones coordinadas con el calendario de obra.</p></article>
-        <article><span>03</span><h3>Paneles y circuitos</h3><p>Alimentadores, breakers, circuitos dedicados y actualización de distribución eléctrica.</p></article>
-        <article><span>04</span><h3>Iluminación</h3><p>Instalación interior y exterior con atención a ubicación, acabado y funcionamiento.</p></article>
-        <article><span>05</span><h3>Diagnóstico</h3><p>Localización de fallas, sobrecargas, pérdida de alimentación y problemas de equipos.</p></article>
-        <article><span>06</span><h3>Servicio comercial</h3><p>Trabajos eléctricos para locales, oficinas, equipos y necesidades de expansión.</p></article>
+        <article><span>01</span><h3 data-i18n="service1Title">Obra nueva</h3><p data-i18n="service1Copy">Instalación eléctrica completa para viviendas, desarrollos y espacios comerciales.</p></article>
+        <article><span>02</span><h3 data-i18n="service2Title">Rough-in y trim</h3><p data-i18n="service2Copy">Cableado, cajas, dispositivos y terminaciones coordinadas con el calendario de obra.</p></article>
+        <article><span>03</span><h3 data-i18n="service3Title">Paneles y circuitos</h3><p data-i18n="service3Copy">Alimentadores, breakers, circuitos dedicados y actualización de distribución eléctrica.</p></article>
+        <article><span>04</span><h3 data-i18n="service4Title">Iluminación</h3><p data-i18n="service4Copy">Instalación interior y exterior con atención a ubicación, acabado y funcionamiento.</p></article>
+        <article><span>05</span><h3 data-i18n="service5Title">Diagnóstico</h3><p data-i18n="service5Copy">Localización de fallas, sobrecargas, pérdida de alimentación y problemas de equipos.</p></article>
+        <article><span>06</span><h3 data-i18n="service6Title">Servicio comercial</h3><p data-i18n="service6Copy">Trabajos eléctricos para locales, oficinas, equipos y necesidades de expansión.</p></article>
       </div>
     </section>
 
     <section class="work-video section" id="trabajos">
       <div class="section-heading">
-        <p class="eyebrow dark">Nuestros trabajos eléctricos</p>
-        <h2>Calidad visible en cada instalación</h2>
-        <p>Paneles, cableado de obra nueva y terminaciones de iluminación con atención a cada detalle.</p>
+        <p class="eyebrow dark" data-i18n="workEyebrow">Nuestros trabajos eléctricos</p><h2 data-i18n="workTitle">Calidad visible en cada instalación</h2><p data-i18n="workCopy">Paneles, cableado de obra nueva y terminaciones de iluminación con atención a cada detalle.</p>
       </div>
       <div class="video-frame">
         <video controls playsinline preload="metadata" poster="hero-electrician.jpg" aria-label="Video promocional de trabajos eléctricos de P&C Electric Services">
@@ -75,43 +76,38 @@
 
     <section class="process section" id="proceso">
       <div class="process-intro">
-        <p class="eyebrow">Un proceso sencillo</p>
-        <h2>Del recorrido inicial a la inspección final</h2>
-        <p>Revisamos el alcance, organizamos materiales y ejecutamos cada etapa con comunicación clara.</p>
+        <p class="eyebrow" data-i18n="processEyebrow">Un proceso sencillo</p><h2 data-i18n="processTitle">Del recorrido inicial a la inspección final</h2><p data-i18n="processCopy">Revisamos el alcance, organizamos materiales y ejecutamos cada etapa con comunicación clara.</p>
       </div>
       <ol class="steps">
-        <li><b>01</b><div><h3>Revisión</h3><p>Evaluamos planos, carga, recorrido y condiciones del lugar.</p></div></li>
-        <li><b>02</b><div><h3>Estimado</h3><p>Definimos alcance, materiales y precio antes de comenzar.</p></div></li>
-        <li><b>03</b><div><h3>Instalación</h3><p>Coordinamos el trabajo con las demás etapas del proyecto.</p></div></li>
-        <li><b>04</b><div><h3>Verificación</h3><p>Probamos, identificamos y dejamos el sistema listo para inspección.</p></div></li>
+        <li><b>01</b><div><h3 data-i18n="step1Title">Revisión</h3><p data-i18n="step1Copy">Evaluamos planos, carga, recorrido y condiciones del lugar.</p></div></li>
+        <li><b>02</b><div><h3 data-i18n="step2Title">Estimado</h3><p data-i18n="step2Copy">Definimos alcance, materiales y precio antes de comenzar.</p></div></li>
+        <li><b>03</b><div><h3 data-i18n="step3Title">Instalación</h3><p data-i18n="step3Copy">Coordinamos el trabajo con las demás etapas del proyecto.</p></div></li>
+        <li><b>04</b><div><h3 data-i18n="step4Title">Verificación</h3><p data-i18n="step4Copy">Probamos, identificamos y dejamos el sistema listo para inspección.</p></div></li>
       </ol>
     </section>
 
     <section class="coverage section" id="cobertura">
       <div>
-        <p class="eyebrow dark">Área de servicio</p>
-        <h2>Sirviendo a Laredo y comunidades cercanas</h2>
+        <p class="eyebrow dark" data-i18n="coverageEyebrow">Área de servicio</p><h2 data-i18n="coverageTitle">Sirviendo a Laredo y comunidades cercanas</h2>
       </div>
       <div class="coverage-card">
         <strong>Laredo, Texas</strong>
-        <p>Proyectos residenciales, subdivisiones, nuevas construcciones y servicio comercial.</p>
+        <p data-i18n="coverageCopy">Proyectos residenciales, subdivisiones, nuevas construcciones y servicio comercial.</p>
       </div>
     </section>
 
     <section class="contact section" id="contacto">
       <div>
-        <p class="eyebrow">Hablemos de su proyecto</p>
-        <h2>¿Necesita un estimado eléctrico?</h2>
-        <p>Cuéntenos el tipo de trabajo, la ubicación y cuándo necesita comenzar.</p>
+        <p class="eyebrow" data-i18n="contactEyebrow">Hablemos de su proyecto</p><h2 data-i18n="contactTitle">¿Necesita un estimado eléctrico?</h2><p data-i18n="contactCopy">Cuéntenos el tipo de trabajo, la ubicación y cuándo necesita comenzar.</p>
       </div>
       <div class="contact-card">
-        <p class="label">Compañía</p>
+        <p class="label" data-i18n="companyLabel">Compañía</p>
         <h3>P&amp;C Electric Services LLC</h3>
         <p><strong>Reinier Chacon</strong></p>
         <p>Laredo, Texas</p>
         <div class="contact-actions">
-          <a class="button primary" href="tel:+19568982417">Llamar: (956) 898-2417</a>
-          <a class="button whatsapp" href="https://wa.me/19568982417" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+          <a class="button primary" href="tel:+19568982417"><span data-i18n="call">Llamar</span>: (956) 898-2417</a>
+          <a class="button whatsapp" href="https://wa.me/19568982417" target="_blank" rel="noopener" data-i18n="whatsapp">Escribir por WhatsApp</a>
           <a class="button email" href="mailto:pcserviceexpre@gmail.com">pcserviceexpre@gmail.com</a>
         </div>
       </div>
@@ -120,7 +116,7 @@
 
   <footer>
     <p><strong>P&amp;C Electric Services LLC</strong></p>
-    <p>Servicios eléctricos en Laredo, Texas</p>
+    <p data-i18n="footerServices">Servicios eléctricos en Laredo, Texas</p>
     <p>© <span id="year"></span> P&amp;C Electric Services LLC</p>
   </footer>
   <script src="script.js"></script>
